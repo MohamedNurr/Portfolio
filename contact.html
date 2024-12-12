@@ -5,7 +5,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta name="description" content="This is the resume page of Mohamed Nur, Management Information Systems student.">
     <title>Mohamed Nur's Portfolio::Home</title> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- google fomt cdns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jquery cdns -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">   
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,41 +16,48 @@
    <img src="images/logo.png" alt="logo" height="212" width="470" class="img-fluid logo">
 </header>
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="about me.html">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="videos.html">Vidoes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
                 <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>      
             </ul>
     
     </div>
 </nav>
-<div class="home-hero">
-<h1>Welcome to my portfolio!</h1>
+
+    <div class="home-hero">
+        <h1>Welcome to my portfolio!</h1>
     </div>
     <main>
-        <div class="row">
-             <div class="col-sm-6">
-        <h1>About Me</h1>
-<p>My name is Mohamed Nur and I study Management Information System at Saint Paul College in St. Paul, Minnesota. I made this website as a portfolio of my skills developing websites and i am continuing to learn more about to develope web fundemantals and web design.</p>
-            <p>I have taken the following classes at Saint Paul College:</p>
-               <ul><li> Web Fundamentals, where I learned HTML and CSS</li>
-               <li> Computer Science and Information Systems</li>
-                <li>Introduction to Computing and Programming Concepts.</li>
-                <li>Next semester I will be taking Web Design. My hobbies include reading science fiction, documentary fiction, playing soccer, and playing chess and dominos.</li><p>
-                </ul>
-             </div>
-              <div class="col-sm-6">
-       <img src="images/ani7.jpg" alt="Mohamed Nur" class="about-image">
-
-             </div>
-         </div>
-    </main class= "home">
-    <footer class="container-fluid bg-dark text-white text-center p-3">
+        <h1>Contact</h1>
+<p>Second year student at saint paul college learned about Html, Css,python, intro computer information system, principle marketing, finance managerial Micro and Macro economic. 
+</p>
+<li>Introduction to Computing and Programming Concepts.</li>
+        <li>Next semester I will be taking Web Design. My hobbies include reading science fiction, documentary fiction, playing soccer, and playing chess and dominos.</li>  <h2>What can I help with?</h2>
+        <blockquote class="text-block">Looking for a Great fit Website to your business? Contact Me These Platforms!. Let Me help you To achieve your goals..</blockquote>
+        <form method="post" action="https://webdevstudents.com/portfolio/submit-form.php">
+            <label for="first_name">*First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">*Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="message">*Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Let's Rock!">
+    </form>
+    </main>
+       <footer class="container-fluid bg-dark text-white text-center p-3">
         <div class="row">
              <div class="col-sm-3">
             </div>
@@ -96,3 +105,6 @@
 
  </body>
 </html>
+
+
+

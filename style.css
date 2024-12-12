@@ -1,0 +1,280 @@
+body { 
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:lightwhite;
+    box-sizing: border-box;
+}
+
+
+.ani7.jpg image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size:auto;
+}
+
+header h1 {
+    margin-left:auto;
+    padding:auto;
+    color:blue;
+}
+
+header h2{
+    color:black;
+     font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+blockquote {
+    background-color: #eeeeee;
+    border-left: 10px solid gray;
+    padding: 30px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+blockquote a {
+    color:blue;
+}
+
+blockquote a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color:solid ;
+    border-top: 3px solid #e19e22;
+    border-bottom: 3px so lid #e19e22;
+    text-align:center;
+    padding: 5px 0;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+    float: center;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover, nav a.active {
+    background-color:blue;
+    color:lightgray;
+}
+
+nav a:active {
+    color: #fd7e14;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.resume{
+    border:solid 2px lightgray;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+
+
+}
+
+.home-hero {
+    background-image: url(images/mer.jpg);
+    background-size: cover;
+}
+
+.home-hero h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px purple;
+    text-align: center;
+    padding: 100px 0;
+    margin: 0;
+}
+
+footer {
+    text-align:right;
+    padding:1px 1;
+    color:gold;
+}
+
+footer .fa{
+    font-size: 4em;
+}
+p {
+    font-size: 16px; 
+    margin: 1em 0;
+    padding: 1em;
+    text-align: justify;
+    max-width: 60ch;
+    color:black;
+}
+
+.pfooter{
+color: hotpink;
+text-align: center;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #1976D2;
+}
+h1{
+  font-family: Georgia, serif;
+    color: #1976D2;  
+}
+
+@media only screen and (max-width: 768px) {
+    .header-image {
+        height: 200px;
+    }
+}
+
+.logo{
+   margin: 0 auto;
+   display:block;
+   max-width: 300px;
+   height:auto;
+   padding:10px;
+}
+
+input[type='text'], input[type='email'], input[type='tel'], textarea, input[type='submit'] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type='submit'] {
+    background-color: #009688;
+    color: white;
+    font-weight: bold;
+}
+
+input[type='submit']:hover {
+    background-color: #00796b;
+}
+
+table{
+  border-collapse:collapse;
+  margin:0 auto;
+  border:5px solid black;
+}
+tr:nth-child(even){
+  background-color: #eeeeee;
+}
+th{
+  background-color: #93278E;
+  color:white;
+  padding:10px;
+  border-bottom:5px solid blue;
+  
+}
+td{
+  border: 1px solid blue;
+  padding:10px
+} 
+
+.about-image{
+    width:auto;
+    max-width: 400px;
+    height:auto;
+    display: flex;
+}
+
+.video-container, .audio-container, .map-container {
+    float: center;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    justify-content: center;
+}
+
+.video-container::after, .audio-container::after, .map-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+    justify-content: center;
+
+}
+
+.video-container iframe, .audio-container iframe, .map-container iframe {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+
+}
+
+.ani7.jpg image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+.resume{
+    border:solid 3px lightgray;
+font-style: ;
+
+}
+
+* Basic styling for the gallery */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Basic styling and transition effects for the iframes */
+.preview iframe {
+    width: 560px;
+    height: 315px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    border: none; /* Removes the default iframe border */
+}
+
+/* Hover effects */
+.preview:hover iframe {
+    transform: scale(1.05); /* Scale up the video slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    filter: brightness(1.15); /* Increase brightness */
+}
