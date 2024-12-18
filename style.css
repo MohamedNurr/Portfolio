@@ -66,9 +66,8 @@ nav {
 
 
 nav ul {
-    list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 nav li {
@@ -113,6 +112,7 @@ main {
 .home-hero {
     background-image: url(images/mer.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .home-hero h1 {
@@ -120,7 +120,7 @@ main {
     font-size: 60px;
     text-shadow: 2px 2px 2px purple;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 0;
     margin: 0;
 }
 
@@ -170,43 +170,42 @@ h1{
    padding:10px;
 }
 
-input[type='text'], input[type='email'], input[type='tel'], textarea, input[type='submit'] {
-    width: 95%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+.container {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
-
-input[type='submit'] {
-    background-color: #009688;
+.form-group input[type="submit"] {
+    background-color: #5cb85c;
     color: white;
-    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #4cae4c;
 }
 
-input[type='submit']:hover {
-    background-color: #00796b;
-}
-
-table{
-  border-collapse:collapse;
-  margin:0 auto;
-  border:5px solid black;
-}
-tr:nth-child(even){
-  background-color: #eeeeee;
-}
-th{
-  background-color: #93278E;
-  color:white;
-  padding:10px;
-  border-bottom:5px solid blue;
-  
-}
-td{
-  border: 1px solid blue;
-  padding:10px
-} 
 
 .about-image{
     width:auto;
@@ -218,11 +217,11 @@ td{
 .video-container {
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width:100%;
 }
 
 .video-container::after {
-    padding-top: 56.25%; /* This sets the aspect ratio to 16:9 */
+    padding-top: 56.25%;
     display: block;
     content: '';
 }
